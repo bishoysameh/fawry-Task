@@ -21,7 +21,7 @@ public class FawryECommerceSystemApplication {
         
         Product scratchCard = new NonExpirableProduct("Scratch Card", 50, 100, false);
         
-        Customer customer = new Customer("John", 1500);
+        Customer customer = new Customer("John", 5000);
         Cart cart = new Cart();
         cart.add(cheese, 2);
         cart.add(tv, 1);

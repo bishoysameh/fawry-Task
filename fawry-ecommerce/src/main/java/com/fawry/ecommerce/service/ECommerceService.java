@@ -46,15 +46,12 @@ public class ECommerceService {
             throw new IllegalStateException("Insufficient balance");
         }
 
-        // Process shipping
         if (!shippableItems.isEmpty()) {
             shippingService.shipItems(shippableItems);
         }
 
-        // Print receipt
         printReceipt(items, subtotal, shippingFees, totalAmount, customer);
 
-        // Update stock and customer balance
         updateInventory(items);
         customer.deductBalance(totalAmount);
     }

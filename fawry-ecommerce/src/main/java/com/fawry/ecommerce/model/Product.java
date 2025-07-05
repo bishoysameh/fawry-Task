@@ -13,7 +13,6 @@ public abstract class Product {
         this.requiresShipping = requiresShipping;
     }
 
-    // Getters and abstract method
     public abstract boolean isExpired();
     public String getName() { return name; }
     public double getPrice() { return price; }
